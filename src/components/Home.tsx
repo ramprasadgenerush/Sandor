@@ -1,0 +1,545 @@
+"use client"
+
+import React, { useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+const Home = () => {
+
+  // useEffect(() => {
+  //   // Re-load the main script to initialize animations and plugins on route change
+  //   const script = document.createElement("script");
+  //   script.src = "/assets/js/script.js";
+  //   script.src = "/assets/js/main-slider-script.js";
+  //   script.async = true;
+  //   document.body.appendChild(script);
+
+  //   return () => {
+  //     // Cleanup the script when the component unmounts
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
+
+
+  useEffect(() => {
+    const scripts = [
+      "/assets/js/main.js",
+      "/assets/js/script1.js",
+    ];
+
+    const elements = scripts.map((src) => {
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      document.body.appendChild(s);
+      return s;
+    });
+
+    return () => {
+      elements.forEach(el => document.body.removeChild(el));
+    };
+  }, []);
+
+
+  return (
+
+    <>
+
+      <section className="slider1">
+        <div className="slider1__shape">
+          <Image src="/assets/img/png-icon/png-icon-05.png" alt="Image" />
+          <span>Next Slider</span>
+        </div>
+        <div className="slider1__wrapper">
+          <div className="slider1__active owl-carousel owl-theme">
+            <div
+              style={{ backgroundImage: "url(/assets/img/slider/slider-01.jpg)" }}
+              className="slider1__item slider1__height d-flex align-items-center justify-content-center"
+            >
+              <div className="container_m container_l">
+                <div className="row">
+                  <div className="col-xl-10 offset-xl-1 col_padding">
+                    <div className="slider1__content text-center">
+                      <div className="mb-10 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".2s"
+                          data-duration=".4s"
+                          className="animated fadeInUp"
+                        >
+                          <h4 className="slider1__content_subtitle">
+                            <Link href="/home">
+                              <i data-feather="arrow-up-right" className="float-start mt-1" /> Maintaining Quality and Safety
+                            </Link>
+                          </h4>
+                        </div>
+                      </div>
+                      <div className="mb-25 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".5s"
+                          data-duration=".4s"
+                          className="animated fadeInUp"
+                        >
+                          <h2 className="slider1__content_title">
+                            Via Cold Chain
+                            <span> Management </span>
+                          </h2>
+                        </div>
+                      </div>
+                      <div className="pb-35 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".4s"
+                          data-duration=".8s"
+                          className="animated fadeInUp"
+                        >
+                          <div className="main_btn">
+                            {/* Site BTN */}
+                            <Link href="/home" className="btn1 mt-15">
+                              Discover More <i data-feather="arrow-right" className="float-end mt-1" />
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{ backgroundImage: "url(/assets/img/slider/slider-02.jpg)" }}
+              className="slider1__item slider1__height d-flex align-items-center justify-content-center"
+            >
+              <div className="container_m container_l">
+                <div className="row">
+                  <div className="col-xl-10 offset-xl-1 col_padding">
+                    <div className="slider1__content text-center">
+                      <div className="mb-10 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".2s"
+                          data-duration=".4s"
+                          className="animated fadeInUp"
+                        >
+                          <h4 className="slider1__content_subtitle">
+                            <Link href="/home">
+                              <i data-feather="arrow-up-right" className="float-start mt-1" /> Licensed, Distribution-Driven Network To make
+                            </Link>
+                          </h4>
+                        </div>
+                      </div>
+                      <div className="mb-25 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".5s"
+                          data-duration=".4s"
+                          className="animated fadeInUp"
+                        >
+                          <h2 className="slider1__content_title">
+                            Narcotic Drugs
+                            <span> Accessible</span>
+                          </h2>
+                        </div>
+                      </div>
+                      <div className="pb-35 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".4s"
+                          data-duration=".8s"
+                          className="animated fadeInUp"
+                        >
+                          <div className="main_btn">
+                            {/* Site BTN */}
+                            <Link href="/home" className="btn1 mt-15">
+                              Discover More <i data-feather="arrow-right" className="float-end mt-1" />
+                            </Link>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{ backgroundImage: "url(/assets/img/slider/slider-03.jpg)" }}
+              className="slider1__item slider1__height d-flex align-items-center justify-content-center"
+            >
+              <div className="container_m container_l">
+                <div className="row">
+                  <div className="col-xl-10 offset-xl-1 col_padding">
+                    <div className="slider1__content text-center">
+                      <div className="mb-10 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".2s"
+                          data-duration=".4s"
+                          className="animated fadeInUp"
+                        >
+                          <h4 className="slider1__content_subtitle">
+                            <Link href="/home">
+                              <i data-feather="arrow-up-right" className="float-start mt-1" /> Leading The Fight
+                            </Link>
+                          </h4>
+                        </div>
+                      </div>
+                      <div className="mb-25 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".5s"
+                          data-duration=".4s"
+                          className="animated fadeInUp"
+                        >
+                          <h2 className="slider1__content_title">
+                            Against
+                            <span> Covid-19</span>
+                          </h2>
+                        </div>
+                      </div>
+                      <div className="pb-35 fix">
+                        <div
+                          data-animation="fadeInUp"
+                          data-delay=".4s"
+                          data-duration=".8s"
+                          className="animated fadeInUp"
+                        >
+                          <div className="main_btn">
+                            {/* Site BTN */}
+                            <Link href="/home" className="btn1 mt-15">
+                              Discover More <i data-feather="arrow-right" className="float-end mt-1" />
+                            </Link>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="feature1">
+        <div className="content_box_pob_120_80">
+          <div className="container_m_40 container_l">
+            
+            <div className="row">
+              <div className="col-xl-12 col_padding">
+                <h3 className="text-center"> Our services make it possible for manufacturers to reach their products directly to hospitals through an efficient and one stop partnership with Sandor. </h3>
+              </div>
+            </div>
+
+            <div className="row mb-5 mt-4">
+              <div className="col-md-12">
+                <h2 className="heading1__title text-center"> Our <span>Services</span></h2>
+              </div>
+            </div>
+            <div className="row row-cols-xl-4 row-cols-md-2 row-cols-1">
+              <div className="col col_padding">
+                <div className="feature1__item">
+                  <h3 className="feature1__item_title"> Distribution and <br /> Logistics </h3>
+                  <div className="feature1__item_thumb">
+                    <Image
+                      src="/assets/img/png-icon/png-icon-06.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_bg"
+                    />
+                    <Image
+                      src="/assets/img/icon/distribution.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_img"
+                    />
+                  </div>
+                  <div className="feature1__item_content">
+                    <p>
+                      Nationwide cold chain distribution with Narcotic Drugs distribution capabilities in 20 states...
+                    </p>
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+                      <i data-feather="arrow-right" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col col_padding">
+                <div className="feature1__item">
+                  <h3 className="feature1__item_title">Sales and <br /> Marketing</h3>
+                  <div className="feature1__item_thumb">
+                    <Image
+                      src="/assets/img/png-icon/png-icon-06.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_bg"
+                    />
+                    <Image
+                      src="/assets/img/icon/Sales-Marketing.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_img"
+                    />
+                  </div>
+                  <div className="feature1__item_content">
+                    <p>
+                      Specialized sales and marketing team of more than 80 committed and experienced salesmen...
+                    </p>
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+                      <i data-feather="arrow-right" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col col_padding">
+                <div className="feature1__item">
+                  <h3 className="feature1__item_title">Regulatory and Custom House Functions</h3>
+                  <div className="feature1__item_thumb">
+                    <Image
+                      src="/assets/img/png-icon/png-icon-06.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_bg"
+                    />
+                    <Image
+                      src="/assets/img/icon/png-icon-31.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_img"
+                    />
+                  </div>
+                  <div className="feature1__item_content">
+                    <p>
+                      Experienced regulatory affairs team and logistics team capable of handling imports at all...
+                    </p>
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+                      <i data-feather="arrow-right" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col col_padding">
+                <div className="feature1__item">
+                  <h3 className="feature1__item_title">Dialysis <br /> Services</h3>
+                  <div className="feature1__item_thumb">
+                    <Image
+                      src="/assets/img/png-icon/png-icon-06.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_bg"
+                    />
+                    <Image
+                      src="/assets/img/icon/Dialysis-Services.png"
+                      alt="Feature"
+                      className="feature1__item_thumb_img"
+                    />
+                  </div>
+                  <div className="feature1__item_content">
+                    <p>
+                      Provide both partial and complete Dialysis services to various hospital based dialysis centers...
+                    </p>
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+                      <i data-feather="arrow-right" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="service1">
+        <div className="service1__shape">
+          <Image src="/assets/img/shape/shape-02.png" alt="Service" />
+        </div>
+        <div className="content_box_120_70">
+          <div className="container_m_40 container_l">
+
+         <div className="row">
+              <div className="col-xl-6 col_padding">
+                <div className="about1__content">
+                  <div className="heading1 mb-35">
+                    <h4 className="heading1__subtitle mb-10">About Us </h4>
+                    <h2 className="heading1__title">
+                      About The <span>Sandor</span>
+                    </h2>
+                  </div>
+                  <p>
+                    Sandor Medicaids Pvt. Ltd. is a nationwide distribution company specializing in supplies to hospitals and government institutions. It has developed efficient systems and capabilities to supply specialty drugs, device and equipment to hospitals. Since its inception in 1995 in Hyderabad, the company has focused on bringing high-tech biomedical and biotechnology products into India. Sandor has been the first company to bring “Point of Care” concept to the Indian ICU  in 1996 by launch of i-stat, a state of the art product for emergency monitoring of patients.
+                  </p>
+
+                  <p> The company started as a sales, marketing and distribution company and over time evolved as a nationwide distribution, sales and marketing company by 2008 when Genzyme launched their operations in India. It can today boast of a national level distribution network with 21CFR compliant cold chain facilities covering most of Indian states. Our efficient and compliant 20 branch distribution network supports drug and device manufacturers launch products with ready access to more...</p>
+
+                  {/* Site BTN */}
+                  <Link href="/home" className="btn1">
+                    Read More <i data-feather="arrow-right" />
+                  </Link>
+                </div>
+              </div>
+              <div className="col-xl-6 col_padding">
+                <div className="about1__thumb">
+                  <div className="about1__thumb_shap">
+                    <Image src="/assets/img/png-icon/png-icon-11.png" alt="" />
+                  </div>
+                  <div className="about1__thumb_info">
+                    <div className="about1__thumb_info_icon">
+                      <Image src="/assets/img/png-icon/png-icon-10.png" alt="" />
+                    </div>
+                    <div className="about1__thumb_info_text">
+                      <h5>
+                        <span className="counter2">1995</span>
+                      </h5>
+                      <p>Since its inception</p>
+                    </div>
+                  </div>
+                  <div className="row g-0">
+                    <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-end">
+                      <div className="about1__thumb_img3 img_100">
+                        <Image src="/assets/img/about/drugs1.jpg" alt="About" />
+                      </div>
+                    </div>
+                    <div className="col-sm-7 col-xl-6">
+                      <div className="about1__thumb_img1 img_100">
+                        <Image src="/assets/img/about/drugs2.jpg" alt="About" />
+                      </div>
+                      <div className="about1__thumb_img2 img_100">
+                        <Image src="/assets/img/about/drugs3.jpg" alt="About" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="about1 mt-5">
+        <div className="content_box_pob_120 pb-5">
+          <div className="container_m_50 container_l">
+            <div className="row">
+              <div className="col-xl-7 col_padding">
+                <div className="about1__content">
+                  <div className="heading1 mb-25">
+                    {/* <h4 className="heading1__subtitle mb-10">About The Medidoc</h4> */}
+                    <h2 className="heading1__title mt-2">
+                      Vision
+                    </h2>
+                  </div>
+                  <h5 className="about1__content_heading">
+                    Sandor is an organization in pursuit of
+                  </h5>
+                  <ul>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span> Mastering all aspects of healthcare distribution for products and services. </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span>Being recognized as a patient centric organization which cares for life and well being of its patients by providing them with the best in class products through an efficient, ethical and economic distribution network.</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span>
+                        Being a partner of choice for manufacturers of drugs, devices and medical equipment for bringing their products to the Indian healthcare providers.
+                      </span>
+                    </li>
+                  </ul>
+
+
+                </div>
+              </div>
+              <div className="col-xl-5 col_padding">
+                <div className="about1__thumb_img3 img_100">
+                  <Image src="/assets/img/about/Vision.jpg" alt="About" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="about1 mt-0">
+        <div className="content_box_pob_120">
+          <div className="container_m_50 container_l">
+            <div className="row">
+
+              <div className="col-xl-5 col_padding">
+                <div className="about1__thumb_img3 img_100">
+                  <Image src="/assets/img/about/Mission.jpg" alt="About" />
+                </div>
+              </div>
+
+              <div className="col-xl-7 col_padding">
+                <div className="about1__content">
+                  <div className="heading1 mb-35">
+                    {/* <h4 className="heading1__subtitle mb-10">About The Medidoc</h4> */}
+                    <h2 className="heading1__title mt-2">
+                      Mission
+                    </h2>
+                  </div>
+                  <ul>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span> Provide easy access of healthcare products at affordable prices to patients/hospitals across India through our reliable, efficient, secure and technology driven distribution solution fulfilling market demand by adding value to both manufacturers and hospitals. </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span> To work diligently towards bringing in innovative products to healthcare providers and creating demand for those products in an ethical and transparent way. </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span>
+                        To become a one stop shop for healthcare products in the field of Critical Care, Nephrology and Transplantation in India.
+                      </span>
+                    </li>
+                  </ul>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    </>
+
+
+  );
+};
+
+export default Home;
