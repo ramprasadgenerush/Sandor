@@ -30,12 +30,9 @@
 
 (function ($) {
    "use strict";
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
    //======================================================|
    //===| 01. Scroll To Top
    //======================================================|
@@ -124,7 +121,6 @@
       meanScreenWidth: "991",
    });
 
-<<<<<<< HEAD
    
   $(document).on("click", ".sub_menu li a", function () {
     const menu = $(this).closest(".sub_menu");
@@ -163,25 +159,6 @@ $(window).scroll(function () {
 });
 
    
-=======
-   //======================================================|
-   //===| 07. Sticky Menu
-   //======================================================|
-   if (screen.width >= 992) {
-      $(document).on("scroll", function (e) {
-         var scrollPos = $(this).scrollTop();
-         if (scrollPos > 400) {
-            $(".header__menu-wrapper").addClass("menu_sticky");
-            $(".header__menu-wrapper").addClass("animated");
-            $(".header__menu-wrapper").addClass("slideInDown");
-         } else {
-            $(".header__menu-wrapper").removeClass("menu_sticky");
-            $(".header__menu-wrapper").removeClass("animated");
-            $(".header__menu-wrapper").removeClass("slideInDown");
-         }
-      });
-   }
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
 
    //======================================================|
    //===| 08. CounterUp
@@ -227,7 +204,6 @@ $(window).scroll(function () {
    //======================================================|
    //===| 11. Search Box
    //======================================================|
-<<<<<<< HEAD
 
    // if ($(".search_box_container").length) {
    //    var searchToggleBtn = $(".search_btn");
@@ -248,27 +224,6 @@ $(window).scroll(function () {
    //          e.stopPropagation();
    //       });
    // }
-=======
-   if ($(".search_box_container").length) {
-      var searchToggleBtn = $(".search_btn");
-      var searchContent = $(".search_form");
-      var body = $("body");
-
-      searchToggleBtn.on("click", function (e) {
-         searchContent.toggleClass("search_form_toggle");
-         e.stopPropagation();
-      });
-
-      body
-         .on("click", function () {
-            searchContent.removeClass("search_form_toggle");
-         })
-         .find(searchContent)
-         .on("click", function (e) {
-            e.stopPropagation();
-         });
-   }
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
 
    //======================================================|
    //===| 12. Info bar
@@ -522,11 +477,8 @@ $(window).scroll(function () {
       //===| 20. Preloader Js
       $(".preloader").delay(100).fadeOut("slow");
    });
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
 })(jQuery);

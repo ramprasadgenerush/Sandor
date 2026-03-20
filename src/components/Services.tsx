@@ -35,11 +35,7 @@ const Services = () => {
                   <h3 className="breadcrumb1__title">Our Services</h3>
                   <div className="breadcrumb1__list">
                     <span>
-<<<<<<< HEAD
                       <Link href="/">
-=======
-                      <Link href="/home">
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                         <span>Home</span>
                       </Link>
                     </span>
@@ -55,25 +51,11 @@ const Services = () => {
       </section>
 
 
-<<<<<<< HEAD
       <section className="feature1">
         <div className="content_box_pob_120_80">
           <div className="container_m_40 container_l">
 
             <div className="row mb-5">
-=======
-            <section className="feature1">
-        <div className="content_box_pob_120_80">
-          <div className="container_m_40 container_l">
-            
-            <div className="row">
-              <div className="col-xl-12 col_padding">
-                <h3 className="text-center"> Our services make it possible for manufacturers to reach their products directly to hospitals through an efficient and one stop partnership with Sandor. </h3>
-              </div>
-            </div>
-
-            <div className="row mb-5 mt-4">
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
               <div className="col-md-12">
                 <h2 className="heading1__title text-center"> Our <span>Services</span></h2>
               </div>
@@ -83,20 +65,12 @@ const Services = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title"> Distribution and <br /> Logistics </h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/distribution.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -106,17 +80,10 @@ const Services = () => {
                     <p>
                       Nationwide cold chain distribution with Narcotic Drugs distribution capabilities in 20 states...
                     </p>
-<<<<<<< HEAD
                     <Link href="/distribution-logistics"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -127,20 +94,12 @@ const Services = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Sales and <br /> Marketing</h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Sales-Marketing.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -150,17 +109,10 @@ const Services = () => {
                     <p>
                       Specialized sales and marketing team of more than 80 committed and experienced salesmen...
                     </p>
-<<<<<<< HEAD
                     <Link href="/sales-marketing"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -171,20 +123,12 @@ const Services = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Regulatory and Custom House Functions</h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/png-icon-31.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -194,17 +138,10 @@ const Services = () => {
                     <p>
                       Experienced regulatory affairs team and logistics team capable of handling imports at all...
                     </p>
-<<<<<<< HEAD
                     <Link href="/regulatory-supports"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -215,20 +152,12 @@ const Services = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Dialysis <br /> Services</h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Dialysis-Services.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -238,17 +167,10 @@ const Services = () => {
                     <p>
                       Provide both partial and complete Dialysis services to various hospital based dialysis centers...
                     </p>
-<<<<<<< HEAD
                     <Link href="/dialysis-services"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -259,10 +181,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-=======
-
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
       
 
     </>

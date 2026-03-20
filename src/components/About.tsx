@@ -24,10 +24,7 @@ const About = () => {
 
     <>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
       <section
         className="breadcrumb1"
         style={{ backgroundImage: "url(/assets/img/breadcrumb/breadcrumb-01.png)" }}
@@ -40,11 +37,7 @@ const About = () => {
                   <h3 className="breadcrumb1__title">About Us</h3>
                   <div className="breadcrumb1__list">
                     <span>
-<<<<<<< HEAD
                       <Link href="/">
-=======
-                      <Link href="/home">
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                         <span>Home</span>
                       </Link>
                     </span>
@@ -62,11 +55,7 @@ const About = () => {
 
       <section className="service1 bg-transparent">
         <div className="service1__shape">
-<<<<<<< HEAD
           <img src="/assets/img/shape/shape-02.png" alt="Service" />
-=======
-          <Image src="/assets/img/shape/shape-02.png" alt="Service" />
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
         </div>
         <div className="content_box_120_70 pb-2">
           <div className="container_m_40 container_l">
@@ -90,7 +79,6 @@ const About = () => {
                 </div>
               </div>
               <div className="col-xl-6 col_padding">
-<<<<<<< HEAD
                 <div className="about1__thumb mt-0">
                   <div className="about1__thumb_shap">
                     <img src="/assets/img/png-icon/png-icon-11.png" alt="" />
@@ -100,17 +88,6 @@ const About = () => {
                       <img src="/assets/img/png-icon/png-icon-10.png" alt="" />
                     </div>
                     <div className="about1__thumb_info_text rounded-2">
-=======
-                <div className="about1__thumb">
-                  <div className="about1__thumb_shap">
-                    <Image src="/assets/img/png-icon/png-icon-11.png" alt="" />
-                  </div>
-                  <div className="about1__thumb_info">
-                    <div className="about1__thumb_info_icon">
-                      <Image src="/assets/img/png-icon/png-icon-10.png" alt="" />
-                    </div>
-                    <div className="about1__thumb_info_text">
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <h5>
                         <span className="counter2">1995</span>
                       </h5>
@@ -118,30 +95,17 @@ const About = () => {
                     </div>
                   </div>
                   <div className="row g-0">
-<<<<<<< HEAD
                     <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-end d-lg-block d-none">
                       <div className="about1__thumb_img3 img_100">
                         <img src="/assets/img/about/drugs1.jpg" alt="About" />
-=======
-                    <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-end">
-                      <div className="about1__thumb_img3 img_100">
-                        <Image src="/assets/img/about/drugs1.jpg" alt="About" />
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       </div>
                     </div>
                     <div className="col-sm-7 col-xl-6">
                       <div className="about1__thumb_img1 img_100">
-<<<<<<< HEAD
                         <img src="/assets/img/about/drugs2.jpg" alt="About" />
                       </div>
                       <div className="about1__thumb_img2 img_100">
                         <img src="/assets/img/about/drugs3.jpg" alt="About" />
-=======
-                        <Image src="/assets/img/about/drugs2.jpg" alt="About" />
-                      </div>
-                      <div className="about1__thumb_img2 img_100">
-                        <Image src="/assets/img/about/drugs3.jpg" alt="About" />
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       </div>
                     </div>
                   </div>
@@ -149,11 +113,7 @@ const About = () => {
               </div>
             </div>
 
-<<<<<<< HEAD
             <div className="row mt-5 mt-lg-0">
-=======
-            <div className="row">
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
               <div className="col-xl-12 col_padding">
                 <p> The company has over time developed a strong sales and marketing team which is helping it launch own branded products in select therapeutic area like Critical Care, Nephrology and Transplantation and Pain Management. Our strong presence in Government Institutions has ensured direct sales to all users without help of any sub dealer or liaison agents. The company also provides complete regulatory support to partners and has in-house pharmacovigilance function  besides having a strong custom clearing department. </p>
 
@@ -167,19 +127,11 @@ const About = () => {
       </section>
 
 
-<<<<<<< HEAD
       <section className="feature1 mt-3 mt-lg-4">
         <div className="content_box_pob_120_80 pt-0">
           <div className="container_m_40 container_l">
 
             <div className="row mb-5">
-=======
-      <section className="feature1">
-        <div className="content_box_pob_120_80 pt-0">
-          <div className="container_m_40 container_l">
-
-            <div className="row mb-5 mt-4">
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
               <div className="col-md-12">
                 <h2 className="heading1__title text-center"> Our <span>Services</span></h2>
               </div>
@@ -189,20 +141,12 @@ const About = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title"> Distribution and <br /> Logistics </h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/distribution.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -212,17 +156,10 @@ const About = () => {
                     <p>
                       Nationwide cold chain distribution with Narcotic Drugs distribution capabilities in 20 states...
                     </p>
-<<<<<<< HEAD
                     <Link href="/distribution-logistics"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -233,20 +170,12 @@ const About = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Sales and <br /> Marketing</h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Sales-Marketing.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -256,17 +185,10 @@ const About = () => {
                     <p>
                       Specialized sales and marketing team of more than 80 committed and experienced salesmen...
                     </p>
-<<<<<<< HEAD
                     <Link href="/sales-marketing"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -277,20 +199,12 @@ const About = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Regulatory and Custom House Functions</h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/png-icon-31.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -300,17 +214,10 @@ const About = () => {
                     <p>
                       Experienced regulatory affairs team and logistics team capable of handling imports at all...
                     </p>
-<<<<<<< HEAD
                     <Link href="/regulatory-supports"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -321,20 +228,12 @@ const About = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Dialysis <br /> Services</h3>
                   <div className="feature1__item_thumb">
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
-<<<<<<< HEAD
                     <img
-=======
-                    <Image
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Dialysis-Services.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -344,17 +243,10 @@ const About = () => {
                     <p>
                       Provide both partial and complete Dialysis services to various hospital based dialysis centers...
                     </p>
-<<<<<<< HEAD
                     <Link href="/dialysis-services"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
-=======
-                    <Link href="/home"
-                      className="feature1__item_btn d-flex justify-content-between"
-                    >
-                      <span className="fw-semibold"> Read More </span>
->>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
