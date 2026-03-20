@@ -1,0 +1,193 @@
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #2b2b2d;
+}
+
+.icon-list li img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.icon-list li span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #2b2b2d;
+}
+
+.fs-7{
+    font-size: 15px;
+}
+
+.h56 {
+    height: 56px;
+}
+
+.acolor {
+    color: #002fb1;
+}
+
+
+
+.sandor {
+    display: flex;
+    width: 100%;
+    /* background: #f0f7fd; */
+    border-radius: 30px;
+    /* overflow: hidden; */
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.sandor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #f0f7fd;
+
+    clip-path: polygon(0 0, 92.788% 0, 92.788% 0, 93.958% .111%, 95.067% .432%, 96.101% .947%, 97.046% 1.636%, 97.887% 2.483%, 98.608% 3.471%, 99.195% 4.581%, 99.632% 5.797%, 99.906% 7.101%, 100% 8.475%, 100% 69.209%, 100% 69.209%, 99.712% 72.951%, 98.915% 75.734%, 97.709% 77.731%, 96.191% 79.118%, 94.463% 80.067%, 92.622% 80.755%, 90.769% 81.354%, 89.003% 82.039%, 87.422% 82.985%, 86.127% 84.364%, 86.127% 84.364%, 85.148% 86.19%, 84.436% 88.183%, 83.86% 90.259%, 83.285% 92.334%, 82.577% 94.323%, 81.602% 96.14%, 80.226% 97.702%, 78.316% 98.922%, 75.737% 99.716%, 72.356% 100%, 0 100%);
+}
+
+.sandor:hover {
+    transform: translateY(-4px);
+    /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); */
+}
+
+.sandor__img {
+    flex: 0 0 275px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -45px;
+}
+
+.sandor__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+.sandor__content {
+    flex: 1;
+    padding: 40px 40px 40px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.sandor__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #253e7e;
+    margin-bottom: 24px;
+    line-height: 28px;
+    border-bottom: dotted 2px #3150a1;
+    padding-bottom: 15px;
+}
+
+.sandor__desc {
+    font-size: 17px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.sandor__btn {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background: #0a31ad;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sandor__btn:hover {
+    background: #253e7e;
+    transform: scale(1.1);
+}
+
+.sandor__btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.gdsection {
+    margin-top: 135px;
+}
+
+@media (max-width: 768px) {
+    .sandor {
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .sandor__img {
+        flex: 0 0 250px;
+        margin-top: 0px;
+    }
+
+    .sandor__content {
+        padding: 30px;
+    }
+
+    .sandor__title {
+        font-size: 22px;
+        border-bottom: none;
+    }
+
+    .sandor__btn {
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+
+    .sandor::before {
+        clip-path: none;
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .gdsection {
+        margin-top: 40px;
+    }
+}
