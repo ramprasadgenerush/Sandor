@@ -25,7 +25,11 @@ const Mission = () => {
     <>
 
       <section
+<<<<<<< HEAD
         className="breadcrumb1"
+=======
+        className="breadcrumb1 mb-100"
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
         style={{ backgroundImage: "url(/assets/img/breadcrumb/breadcrumb-01.png)" }}
       >
         <div className="breadcrumb1__padding">
@@ -36,7 +40,11 @@ const Mission = () => {
                   <h3 className="breadcrumb1__title">Mission</h3>
                   <div className="breadcrumb1__list">
                     <span>
+<<<<<<< HEAD
                       <Link href="/">
+=======
+                      <Link href="/home">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                         <span>Home</span>
                       </Link>
                     </span>
@@ -52,25 +60,39 @@ const Mission = () => {
       </section>
 
 
+<<<<<<< HEAD
       <section className="about1 mt-5">
         <div className="content_box_pob_120_50">
+=======
+      <section className="about1">
+        <div className="content_box_pob_120_80">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
           <div className="container_m_50 container_l">
             <div className="row">
 
               <div className="col-xl-5 col_padding">
                 <div className="about1__thumb_img3 img_100">
+<<<<<<< HEAD
                   <img src="/assets/img/about/Mission.jpg" alt="About" />
+=======
+                  <Image src="/assets/img/about/Mission.jpg" alt="About" />
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                 </div>
               </div>
 
               <div className="col-xl-7 col_padding">
+<<<<<<< HEAD
                 <div className="about1__content1 mt-lg-0 mt-5">
+=======
+                <div className="about1__content">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                   <div className="heading1 mb-35">
                     {/* <h4 className="heading1__subtitle mb-10">About The Medidoc</h4> */}
                     <h2 className="heading1__title mt-2">
                       Mission
                     </h2>
                   </div>
+<<<<<<< HEAD
                   <ul className="icon-list">
                     <li>
                       <img src="/assets/img/icon/check.png" alt="check" />
@@ -93,6 +115,32 @@ const Mission = () => {
                         in India. </span>
                     </li>
                   </ul>
+=======
+                  <ul>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span> Provide easy access of healthcare products at affordable prices to patients/hospitals across India through our reliable, efficient, secure and technology driven distribution solution fulfilling market demand by adding value to both manufacturers and hospitals. </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span> To work diligently towards bringing in innovative products to healthcare providers and creating demand for those products in an ethical and transparent way. </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span>
+                        To become a one stop shop for healthcare products in the field of Critical Care, Nephrology and Transplantation in India.
+                      </span>
+                    </li>
+                  </ul>
+
+
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                 </div>
               </div>
 
@@ -103,7 +151,11 @@ const Mission = () => {
 
 
 
+<<<<<<< HEAD
       <section className="feature1 mt-0">
+=======
+      <section className="feature1">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
         <div className="content_box_pob_120_80 pt-0">
           <div className="container_m_40 container_l">
 
@@ -117,12 +169,20 @@ const Mission = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title"> Distribution and <br /> Logistics </h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/distribution.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -132,10 +192,17 @@ const Mission = () => {
                     <p>
                       Nationwide cold chain distribution with Narcotic Drugs distribution capabilities in 20 states...
                     </p>
+<<<<<<< HEAD
                     <Link href="/distribution-logistics"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -146,12 +213,20 @@ const Mission = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Sales and <br /> Marketing</h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Sales-Marketing.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -161,10 +236,17 @@ const Mission = () => {
                     <p>
                       Specialized sales and marketing team of more than 80 committed and experienced salesmen...
                     </p>
+<<<<<<< HEAD
                     <Link href="/sales-marketing"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -175,12 +257,20 @@ const Mission = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Regulatory and Custom House Functions</h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/png-icon-31.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -190,10 +280,17 @@ const Mission = () => {
                     <p>
                       Experienced regulatory affairs team and logistics team capable of handling imports at all...
                     </p>
+<<<<<<< HEAD
                     <Link href="/regulatory-supports"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -204,12 +301,20 @@ const Mission = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Dialysis <br /> Services</h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Dialysis-Services.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -219,10 +324,17 @@ const Mission = () => {
                     <p>
                       Provide both partial and complete Dialysis services to various hospital based dialysis centers...
                     </p>
+<<<<<<< HEAD
                     <Link href="/dialysis-services"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>

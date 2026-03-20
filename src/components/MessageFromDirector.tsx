@@ -36,7 +36,11 @@ const MessageFromDirector = () => {
                   <h3 className="breadcrumb1__title">Message from Director</h3>
                   <div className="breadcrumb1__list">
                     <span>
+<<<<<<< HEAD
                       <Link href="/">
+=======
+                      <Link href="/home">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                         <span>Home</span>
                       </Link>
                     </span>
@@ -56,12 +60,20 @@ const MessageFromDirector = () => {
   <div className="content_box_120">
     <div className="container_m_50 container_l">
       <div className="row">
+<<<<<<< HEAD
         <div className="col-xl-10 mx-auto">
+=======
+        <div className="col-xl-11 col_padding">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
           <div className="postbox_w1__wrapper">
             <div className="biography1">
               <div className="biography1__thumb">
                 <a>
+<<<<<<< HEAD
                   <img src="/assets/img/about/Rajeev-Sindhi.jpg" alt="Thumb" />
+=======
+                  <Image src="/assets/img/blog/biography-1.jpg" alt="Thumb" />
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                 </a>
               </div>
               <div className="biography1__content">

@@ -9,7 +9,11 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+<<<<<<< HEAD
 issue
+=======
+
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
 # testing
 /coverage
 

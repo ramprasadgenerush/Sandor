@@ -36,7 +36,11 @@ const Vision = () => {
                   <h3 className="breadcrumb1__title">Vision</h3>
                   <div className="breadcrumb1__list">
                     <span>
+<<<<<<< HEAD
                       <Link href="/">
+=======
+                      <Link href="/home">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                         <span>Home</span>
                       </Link>
                     </span>
@@ -57,7 +61,11 @@ const Vision = () => {
           <div className="container_m_50 container_l">
             <div className="row">
               <div className="col-xl-7 col_padding">
+<<<<<<< HEAD
                 <div className="about1__content1">
+=======
+                <div className="about1__content">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                   <div className="heading1 mb-25">
                     {/* <h4 className="heading1__subtitle mb-10">About The Medidoc</h4> */}
                     <h2 className="heading1__title mt-2">
@@ -67,6 +75,7 @@ const Vision = () => {
                   <h5 className="about1__content_heading">
                     Sandor is an organization in pursuit of
                   </h5>
+<<<<<<< HEAD
 
                   <ul className="icon-list">
                     <li>
@@ -89,11 +98,41 @@ const Vision = () => {
                     </li>
                   </ul>
 
+=======
+                  <ul>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span> Mastering all aspects of healthcare distribution for products and services. </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span>Being recognized as a patient centric organization which cares for life and well being of its patients by providing them with the best in class products through an efficient, ethical and economic distribution network.</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i data-feather="check" />
+                      </span>
+                      <span>
+                        Being a partner of choice for manufacturers of drugs, devices and medical equipment for bringing their products to the Indian healthcare providers.
+                      </span>
+                    </li>
+                  </ul>
+
+
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                 </div>
               </div>
               <div className="col-xl-5 col_padding">
                 <div className="about1__thumb_img3 img_100">
+<<<<<<< HEAD
                   <img src="/assets/img/about/Vision.jpg" alt="About" />
+=======
+                  <Image src="/assets/img/about/Vision.jpg" alt="About" />
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                 </div>
               </div>
             </div>
@@ -102,7 +141,11 @@ const Vision = () => {
       </section>
 
 
+<<<<<<< HEAD
       <section className="feature1 mt-2">
+=======
+      <section className="feature1">
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
         <div className="content_box_pob_120_80 pt-0">
           <div className="container_m_40 container_l">
 
@@ -116,12 +159,20 @@ const Vision = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title"> Distribution and <br /> Logistics </h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/distribution.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -131,10 +182,17 @@ const Vision = () => {
                     <p>
                       Nationwide cold chain distribution with Narcotic Drugs distribution capabilities in 20 states...
                     </p>
+<<<<<<< HEAD
                     <Link href="/distribution-logistics"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -145,12 +203,20 @@ const Vision = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Sales and <br /> Marketing</h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Sales-Marketing.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -160,10 +226,17 @@ const Vision = () => {
                     <p>
                       Specialized sales and marketing team of more than 80 committed and experienced salesmen...
                     </p>
+<<<<<<< HEAD
                     <Link href="/sales-marketing"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -174,12 +247,20 @@ const Vision = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Regulatory and Custom House Functions</h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/png-icon-31.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -189,10 +270,17 @@ const Vision = () => {
                     <p>
                       Experienced regulatory affairs team and logistics team capable of handling imports at all...
                     </p>
+<<<<<<< HEAD
                     <Link href="/regulatory-supports"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
@@ -203,12 +291,20 @@ const Vision = () => {
                 <div className="feature1__item">
                   <h3 className="feature1__item_title">Dialysis <br /> Services</h3>
                   <div className="feature1__item_thumb">
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/png-icon/png-icon-06.png"
                       alt="Feature"
                       className="feature1__item_thumb_bg"
                     />
+<<<<<<< HEAD
                     <img
+=======
+                    <Image
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       src="/assets/img/icon/Dialysis-Services.png"
                       alt="Feature"
                       className="feature1__item_thumb_img"
@@ -218,10 +314,17 @@ const Vision = () => {
                     <p>
                       Provide both partial and complete Dialysis services to various hospital based dialysis centers...
                     </p>
+<<<<<<< HEAD
                     <Link href="/dialysis-services"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
+=======
+                    <Link href="/home"
+                      className="feature1__item_btn d-flex justify-content-between"
+                    >
+                      <span className="fw-semibold"> Read More </span>
+>>>>>>> 66c2b1f7c07377e34cb27e9c10cbe501de4f04c5
                       <i data-feather="arrow-right" />
                     </Link>
                   </div>
