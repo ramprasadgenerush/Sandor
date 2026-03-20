@@ -2,10 +2,50 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 
 
 const Contactus = () => {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: ""
+  });
+  const [loading, setLoading] = React.useState(false);
+  const [responseMsg, setResponseMsg] = React.useState({ type: "", text: "" });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setResponseMsg({ type: "", text: "" });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setResponseMsg({ type: "success", text: "Thanks for contacting us! We will get back to you soon." });
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        setResponseMsg({ type: "error", text: data.error || "Something went wrong. Please try again." });
+      }
+    } catch (error) {
+      setResponseMsg({ type: "error", text: "Something went wrong. Please try again." });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     // Re-load the main script to initialize animations and plugins on route change
@@ -118,110 +158,132 @@ const Contactus = () => {
       </section>
 
 
-<section className="contact1">
-  <div className="content_box_120 pt-0">
-    <div className="contact1__wrapper">
-      <div className="contact1__thumb">
-        <img src="/assets/img/contact/contact-02.png" alt="Image" />
-      </div>
-      <div className="container_m_30 container_l">
-        <div className="row">
-          <div className="col-xl-6 col_padding">
-            <div className="contact1__info">
-              <div className="contact1__info_box">
-                <div className="contact1__info_thumb">
-                  <i className="fa-solid fa-phone" />
-                </div>
-                <div className="contact1__info_content">
-                  <h4>Toll Free Number : </h4>
-                  <p className="m-0"> 1800 425 9515 </p>
-                </div>
-              </div>
+      <section className="contact1">
+        <div className="content_box_120 pt-0">
+          <div className="contact1__wrapper">
+            <div className="contact1__thumb">
+              <img src="/assets/img/contact/contact-02.png" alt="Image" />
             </div>
-          </div>
-          <div className="col-xl-6 col_padding d-flex align-items-center">
-            <div className="contact1__form">
-              <div className="heading1 mb-50">
-                <h4 className="heading1__subtitle mb-10">
-                  Let&apos;s work together
-                </h4>
-                <h2 className="heading1__title">
-                  Get a free <span>quote</span>
-                </h2>
-              </div>
-              <div className="contact1__form_wrapper">
-                <form>
-                  <div className="row">
-                    <div className="col-sm-6">
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div className="col-sm-6">
-                      <input
-                        className="form-control"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-
-                      />
-                    </div>
-                    <div className="col-sm-6">
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="phone-number"
-                        placeholder="Phone"
-                      />
-                    </div>
-                    <div className="col-sm-6">
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                      />
-                    </div>
-                    <div className="col-sm-12">
-                      <textarea
-                        className="form-control"
-                        name="message"
-                        placeholder="Message"
-                        defaultValue={""}
-                      />
-                      {/* Site BTN */}
-                      <a className="btn3 mt-15">
-                        Send Message <i data-feather="arrow-right" />
-                      </a>
+            <div className="container_m_30 container_l">
+              <div className="row">
+                <div className="col-xl-6 col_padding">
+                  <div className="contact1__info">
+                    <div className="contact1__info_box">
+                      <div className="contact1__info_thumb">
+                        <i className="fa-solid fa-phone" />
+                      </div>
+                      <div className="contact1__info_content">
+                        <h4>Toll Free Number : </h4>
+                        <p className="m-0"> 1800 425 9515 </p>
+                      </div>
                     </div>
                   </div>
-                </form>
-                <p className="form-message" />
+                </div>
+                <div className="col-xl-6 col_padding d-flex align-items-center">
+                  <div className="contact1__form">
+                    <div className="heading1 mb-50">
+                      <h4 className="heading1__subtitle mb-10">
+                        Let&apos;s work together
+                      </h4>
+                      <h2 className="heading1__title">
+                        Get a free <span>quote</span>
+                      </h2>
+                    </div>
+                    <div className="contact1__form_wrapper">
+                      <form onSubmit={handleSubmit}>
+                        <div className="row">
+                          <div className="col-sm-6">
+                            <input
+                              className="form-control"
+                              type="text"
+                              name="name"
+                              placeholder="Name"
+                              value={formData.name}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+                          <div className="col-sm-6">
+                            <input
+                              className="form-control"
+                              type="email"
+                              name="email"
+                              placeholder="Email"
+                              value={formData.email}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+                          <div className="col-sm-6">
+                            <input
+                              className="form-control"
+                              type="tel"
+                              name="phone"
+                              placeholder="Phone"
+                              value={formData.phone}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+                          <div className="col-sm-6">
+                            <input
+                              className="form-control"
+                              type="text"
+                              name="subject"
+                              placeholder="Subject"
+                              value={formData.subject}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+                          <div className="col-sm-12">
+                            <textarea
+                              className="form-control"
+                              name="message"
+                              placeholder="Message"
+                              value={formData.message}
+                              onChange={handleChange}
+                              required
+                            />
+                            {/* Site BTN */}
+                            <button
+                              type="submit"
+                              className="btn3 mt-15"
+                              disabled={loading}
+                              style={{ border: "none", cursor: loading ? "not-allowed" : "pointer" }}
+                            >
+                              {loading ? "Sending..." : "Send Message"} <i data-feather="arrow-right" />
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                      {responseMsg.text && (
+                        <p className={`form-message mt-3 ${responseMsg.type === "error" ? "text-danger" : "text-success"}`}>
+                          {responseMsg.text}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+
+
+      <div className="mapouter">
+        <div className="gmap_canvas1">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.062210398921!2d78.4176411!3d17.408801900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96c4d0930ed5%3A0xe0d8430591014da6!2s471%2C%20Road%20No.%2087%2C%20Paramount%20Hills%2C%20Jubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500096!5e0!3m2!1sen!2sin!4v1768814625603!5m2!1sen!2sin"
+            style={{ border: 0, width: "100%", height: 600 }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-
-<div className="mapouter">
-  <div className="gmap_canvas1">
-
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.062210398921!2d78.4176411!3d17.408801900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96c4d0930ed5%3A0xe0d8430591014da6!2s471%2C%20Road%20No.%2087%2C%20Paramount%20Hills%2C%20Jubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500096!5e0!3m2!1sen!2sin!4v1768814625603!5m2!1sen!2sin"
-  style={{ border: 0, width: "100%", height: 600 }}
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
-  </div>
-</div>
 
     </>
 
