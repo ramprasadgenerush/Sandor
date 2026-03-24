@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
     await client.sendMail({
       from: {
-        address: "noreply@sandor.co.in", // Must be a verified sender domain in ZeptoMail
+        address: "noreply@pbshope.in",
         name: "Sandor Website",
       },
       to: [
@@ -139,7 +139,8 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("ZeptoMail Error:", error);
+    // console.error("ZeptoMail Error:", error);
+    console.error("ZeptoMail Error:", JSON.stringify(error, null, 2));
     return NextResponse.json(
       { error: "Failed to send email" },
       { status: 500 },

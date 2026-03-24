@@ -23,18 +23,18 @@ export async function POST(req: Request) {
 
     await client.sendMail({
       from: {
-        address: "noreply@sandor.co.in",
+        address: "noreply@pbshope.in",
         name: "Sandor Website",
       },
       to: [
         {
           email_address: {
             address: "info@sandor.co.in",
-            name: "Sandor Contact",
+            name: "Sandor Callback",
           },
         },
       ],
-      subject: `New Call Back Request from ${name}`,
+      subject: `Sandor.co.in Request from ${name}`,
       htmlbody: `
 <!DOCTYPE html>
 <html lang="en">

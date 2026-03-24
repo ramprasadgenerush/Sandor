@@ -18,7 +18,6 @@ const GetaCallBack = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
-    console.log(e.target.name, e.target.value); // 👈 add this
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
