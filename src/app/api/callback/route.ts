@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
     await client.sendMail({
       from: {
-        address: "noreply@pbshope.in",
+        address: "noreply@sandor.co.in",
         name: "Sandor Website",
       },
       to: [
