@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const About = () => {
-
   useEffect(() => {
     // Re-load the main script to initialize animations and plugins on route change
     const script = document.createElement("script");
@@ -19,15 +18,13 @@ const About = () => {
     };
   }, []);
 
-
   return (
-
     <>
-
-
       <section
         className="breadcrumb1"
-        style={{ backgroundImage: "url(/assets/img/breadcrumb/breadcrumb-01.png)" }}
+        style={{
+          backgroundImage: "url(/assets/img/breadcrumb/breadcrumb-01.png)",
+        }}
       >
         <div className="breadcrumb1__padding">
           <div className="container_m_30 container_l">
@@ -52,14 +49,12 @@ const About = () => {
         </div>
       </section>
 
-
       <section className="service1 bg-transparent">
         <div className="service1__shape">
           <img src="/assets/img/shape/shape-02.png" alt="Service" />
         </div>
         <div className="content_box_120_70 pb-2">
           <div className="container_m_40 container_l">
-
             <div className="row">
               <div className="col-xl-6 col_padding">
                 <div className="about1__content">
@@ -70,12 +65,34 @@ const About = () => {
                     </h2>
                   </div>
                   <p>
-                    Sandor Medicaids Pvt. Ltd. is a nationwide distribution company specializing in supplies to hospitals and government institutions. It has developed efficient systems and capabilities to supply specialty drugs, device and equipment to hospitals. Since its inception in 1995 in Hyderabad, the company has focused on bringing high-tech biomedical and biotechnology products into India. Sandor has been the first company to bring “Point of Care” concept to the Indian ICU  in 1996 by launch of i-stat, a state of the art product for emergency monitoring of patients.
+                    Sandor Medicaids Pvt. Ltd. is a nationwide distribution
+                    company specializing in supplies to hospitals and government
+                    institutions. It has developed efficient systems and
+                    capabilities to supply specialty drugs, device and equipment
+                    to hospitals. Since its inception in 1995 in Hyderabad, the
+                    company has focused on bringing high-tech biomedical and
+                    biotechnology products into India. Sandor has been the first
+                    company to bring “Point of Care” concept to the Indian ICU
+                    in 1996 by launch of i-stat, a state of the art product for
+                    emergency monitoring of patients.
                   </p>
 
-                  <p>The company started as a sales, marketing and distribution company and over time evolved as a nationwide distribution, sales and marketing company by 2008 when Genzyme launched their operations in India. It can today boast of a national level distribution network with 21CFR compliant cold chain facilities covering most of Indian states. Our efficient and compliant 20 branch distribution network supports drug and device manufacturers launch products with ready access to more than 3000 hospitals across India. The company today has more than 180 vendor registrations in Government and private Institutions making it the only partner for foreign or domestic manufacturers to bring their products to hospitals at the most economical costs while maintaining the highest ethical standards. </p>
-
-
+                  <p>
+                    The company started as a sales, marketing and distribution
+                    company and over time evolved as a nationwide distribution,
+                    sales and marketing company by 2008 when Genzyme launched
+                    their operations in India. It can today boast of a national
+                    level distribution network with 21CFR compliant cold chain
+                    facilities covering most of Indian states. Our efficient and
+                    compliant 20 branch distribution network supports drug and
+                    device manufacturers launch products with ready access to
+                    more than 3000 hospitals across India. The company today has
+                    more than 180 vendor registrations in Government and private
+                    Institutions making it the only partner for foreign or
+                    domestic manufacturers to bring their products to hospitals
+                    at the most economical costs while maintaining the highest
+                    ethical standards.{" "}
+                  </p>
                 </div>
               </div>
               <div className="col-xl-6 col_padding">
@@ -115,31 +132,50 @@ const About = () => {
 
             <div className="row mt-5 mt-lg-0">
               <div className="col-xl-12 col_padding">
-                <p> The company has over time developed a strong sales and marketing team which is helping it launch own branded products in select therapeutic area like Critical Care, Nephrology and Transplantation and Pain Management. Our strong presence in Government Institutions has ensured direct sales to all users without help of any sub dealer or liaison agents. The company also provides complete regulatory support to partners and has in-house pharmacovigilance function  besides having a strong custom clearing department. </p>
+                <p>
+                  {" "}
+                  The company has over time developed a strong sales and
+                  marketing team which is helping it launch own branded products
+                  in select therapeutic area like Critical Care, Nephrology and
+                  Transplantation and Pain Management. Our strong presence in
+                  Government Institutions has ensured direct sales to all users
+                  without help of any sub dealer or liaison agents. The company
+                  also provides complete regulatory support to partners and has
+                  in-house pharmacovigilance function besides having a strong
+                  custom clearing department.{" "}
+                </p>
 
-                <p> A firm foothold in the Indian Hospital procurement system has made Sandor a partner of choice for any new launch of medical drugs, devices and equipment in the Indian Hospital System. </p>
-
+                <p>
+                  {" "}
+                  A firm foothold in the Indian Hospital procurement system has
+                  made Sandor a partner of choice for any new launch of medical
+                  drugs, devices and equipment in the Indian Hospital
+                  System.{" "}
+                </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-
       <section className="feature1 mt-3 mt-lg-4">
         <div className="content_box_pob_120_80 pt-0">
           <div className="container_m_40 container_l">
-
             <div className="row mb-5">
               <div className="col-md-12">
-                <h2 className="heading1__title text-center"> Our <span>Services</span></h2>
+                <h2 className="heading1__title text-center">
+                  {" "}
+                  Our <span>Services</span>
+                </h2>
               </div>
             </div>
             <div className="row row-cols-xl-4 row-cols-md-2 row-cols-1">
               <div className="col col_padding">
                 <div className="feature1__item">
-                  <h3 className="feature1__item_title"> Distribution and <br /> Logistics </h3>
+                  <h3 className="feature1__item_title">
+                    {" "}
+                    Distribution and <br /> Logistics{" "}
+                  </h3>
                   <div className="feature1__item_thumb">
                     <img
                       src="/assets/img/png-icon/png-icon-06.png"
@@ -154,9 +190,11 @@ const About = () => {
                   </div>
                   <div className="feature1__item_content">
                     <p>
-                      Nationwide cold chain distribution with Narcotic Drugs distribution capabilities in 20 states...
+                      Nationwide cold chain distribution with Narcotic Drugs
+                      distribution capabilities in 20 states...
                     </p>
-                    <Link href="/distribution-logistics"
+                    <Link
+                      href="/distribution-logistics"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
@@ -168,7 +206,9 @@ const About = () => {
 
               <div className="col col_padding">
                 <div className="feature1__item">
-                  <h3 className="feature1__item_title">Sales and <br /> Marketing</h3>
+                  <h3 className="feature1__item_title">
+                    Sales and <br /> Marketing
+                  </h3>
                   <div className="feature1__item_thumb">
                     <img
                       src="/assets/img/png-icon/png-icon-06.png"
@@ -183,9 +223,11 @@ const About = () => {
                   </div>
                   <div className="feature1__item_content">
                     <p>
-                      Specialized sales and marketing team of more than 80 committed and experienced salesmen...
+                      Specialized sales and marketing team of more than 80
+                      committed and experienced salesmen...
                     </p>
-                    <Link href="/sales-marketing"
+                    <Link
+                      href="/sales-marketing"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
@@ -197,7 +239,9 @@ const About = () => {
 
               <div className="col col_padding">
                 <div className="feature1__item">
-                  <h3 className="feature1__item_title">Regulatory and Custom House Functions</h3>
+                  <h3 className="feature1__item_title">
+                    Regulatory and Custom House Functions
+                  </h3>
                   <div className="feature1__item_thumb">
                     <img
                       src="/assets/img/png-icon/png-icon-06.png"
@@ -212,9 +256,11 @@ const About = () => {
                   </div>
                   <div className="feature1__item_content">
                     <p>
-                      Experienced regulatory affairs team and logistics team capable of handling imports at all...
+                      Experienced regulatory affairs team and logistics team
+                      capable of handling imports at all...
                     </p>
-                    <Link href="/regulatory-supports"
+                    <Link
+                      href="/regulatory-supports"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
@@ -226,7 +272,9 @@ const About = () => {
 
               <div className="col col_padding">
                 <div className="feature1__item">
-                  <h3 className="feature1__item_title">Dialysis <br /> Services</h3>
+                  <h3 className="feature1__item_title">
+                    Dialysis <br /> Services
+                  </h3>
                   <div className="feature1__item_thumb">
                     <img
                       src="/assets/img/png-icon/png-icon-06.png"
@@ -241,9 +289,11 @@ const About = () => {
                   </div>
                   <div className="feature1__item_content">
                     <p>
-                      Provide both partial and complete Dialysis services to various hospital based dialysis centers...
+                      Provide both partial and complete Dialysis services to
+                      various hospital based dialysis centers...
                     </p>
-                    <Link href="/dialysis-services"
+                    <Link
+                      href="/dialysis-services"
                       className="feature1__item_btn d-flex justify-content-between"
                     >
                       <span className="fw-normal"> Read More </span>
@@ -252,19 +302,12 @@ const About = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
-
-
-
     </>
-
-
   );
-
 };
 
 export default About;

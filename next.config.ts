@@ -16,4 +16,4 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["svg-captcha"],
 };
 
-module.exports = nextConfig;
+export default nextConfig;

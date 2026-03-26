@@ -1,5 +1,5 @@
 {
-  "name": "next-urban",
+  "name": "sandor",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "iron-session": "^8.0.4",
-    "next": "15.3.8",
+    "next": "^15.5.14",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "svg-captcha": "^1.4.0",
