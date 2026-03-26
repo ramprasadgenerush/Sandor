@@ -150,27 +150,13 @@
 
 import { NextResponse } from "next/server";
 import { SendMailClient } from "zeptomail";
-import { getIronSession } from "iron-session";
-import { cookies } from "next/headers";
-import type { SessionData } from "../captcha/route";
-
-const sessionOptions = {
-  password: process.env.SESSION_SECRET!,
-  cookieName: "sandor_captcha_session",
-  cookieOptions: {
-    secure: process.env.NODE_ENV === "production",
-    httpOnly: true,
-    sameSite: "lax" as const,
-    maxAge: 60 * 10,
-  },
-};
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, phone, subject, message, captchaInput } = body;
+    const { name, email, phone, subject, message } = body;
 
-    // ── 1. Validate required fields ──────────────────────────────────────────
+    // Validate required fields
     if (!name || !email || !phone || !subject) {
       return NextResponse.json(
         { error: "Missing required fields" },
@@ -178,37 +164,7 @@ export async function POST(req: Request) {
       );
     }
 
-    // ── 2. Verify captcha ────────────────────────────────────────────────────
-    const session = await getIronSession<SessionData>(
-      await cookies(),
-      sessionOptions,
-    );
-
-    if (!session.captcha) {
-      return NextResponse.json(
-        {
-          error:
-            "Captcha session expired. Please refresh the captcha and try again.",
-        },
-        { status: 400 },
-      );
-    }
-
-    if (
-      !captchaInput ||
-      captchaInput.trim().toLowerCase() !== session.captcha
-    ) {
-      return NextResponse.json(
-        { error: "Incorrect captcha. Please try again." },
-        { status: 400 },
-      );
-    }
-
-    // Invalidate captcha after successful verification (one-time use)
-    session.captcha = undefined;
-    await session.save();
-
-    // ── 3. Send email ────────────────────────────────────────────────────────
+    // Send email
     const token = process.env.NEXT_PUBLIC_ZEPTO_TOKEN!;
 
     const client = new SendMailClient({

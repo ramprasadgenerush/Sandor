@@ -285,7 +285,7 @@
 // export default Contactus;
 "use client";
 
-import React, { useEffect, useCallback, useRef } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
 const Contactus = () => {
@@ -296,30 +296,14 @@ const Contactus = () => {
     subject: "",
     message: "",
   });
-  const [captchaInput, setCaptchaInput] = React.useState("");
-  const [captchaSvg, setCaptchaSvg] = React.useState<string>("");
-  const [captchaLoading, setCaptchaLoading] = React.useState(false);
+  const [generatedCode, setGeneratedCode] = React.useState<string>("");
+  const [verificationCode, setVerificationCode] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [responseMsg, setResponseMsg] = React.useState({ type: "", text: "" });
 
-  // ── Load / refresh captcha ──────────────────────────────────────────────────
-  const fetchCaptcha = useCallback(async () => {
-    setCaptchaLoading(true);
-    try {
-      const res = await fetch("/api/captcha", { cache: "no-store" });
-      const svg = await res.text();
-      setCaptchaSvg(svg);
-      setCaptchaInput("");
-    } catch {
-      console.error("Failed to load captcha");
-    } finally {
-      setCaptchaLoading(false);
-    }
-  }, []);
-
   useEffect(() => {
-    fetchCaptcha();
-  }, [fetchCaptcha]);
+    setGeneratedCode(Math.floor(100 + Math.random() * 900).toString());
+  }, []);
 
   // ── Form field change ──────────────────────────────────────────────────────
   const handleChange = (
@@ -331,6 +315,12 @@ const Contactus = () => {
   // ── Submit ─────────────────────────────────────────────────────────────────
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (verificationCode !== generatedCode) {
+      setResponseMsg({ type: "error", text: "Verification code is incorrect." });
+      setVerificationCode("");
+      setGeneratedCode(Math.floor(100 + Math.random() * 900).toString());
+      return;
+    }
     setLoading(true);
     setResponseMsg({ type: "", text: "" });
 
@@ -338,7 +328,7 @@ const Contactus = () => {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, captchaInput }),
+        body: JSON.stringify(formData),
       });
 
       const data = await res.json();
@@ -355,22 +345,19 @@ const Contactus = () => {
           subject: "",
           message: "",
         });
-        setCaptchaInput("");
-        fetchCaptcha(); // refresh captcha after successful submit
+        setVerificationCode("");
+        setGeneratedCode(Math.floor(100 + Math.random() * 900).toString());
       } else {
         setResponseMsg({
           type: "error",
           text: data.error || "Something went wrong. Please try again.",
         });
-        // Always refresh captcha on failure so the user gets a new one
-        fetchCaptcha();
       }
     } catch {
       setResponseMsg({
         type: "error",
         text: "Something went wrong. Please try again.",
       });
-      fetchCaptcha();
     } finally {
       setLoading(false);
     }
@@ -595,7 +582,7 @@ const Contactus = () => {
                             />
                           </div>
 
-                          {/* ── Captcha ─────────────────────────────────────── */}
+                          {/* ── Verification ─────────────────────────────────────── */}
                           <div className="col-sm-12">
                             <div
                               style={{
@@ -603,98 +590,48 @@ const Contactus = () => {
                                 alignItems: "center",
                                 gap: "10px",
                                 margin: "10px 0 8px",
-                                flexWrap: "wrap",
                               }}
                             >
-                              {/* SVG rendered inline */}
                               <div
                                 style={{
-                                  border: "1px solid #ddd",
-                                  borderRadius: "6px",
-                                  overflow: "hidden",
-                                  lineHeight: 0,
-                                  minWidth: 160,
-                                  minHeight: 50,
                                   background: "#f0f4ff",
-                                  opacity: captchaLoading ? 0.4 : 1,
-                                  transition: "opacity 0.2s",
-                                }}
-                                dangerouslySetInnerHTML={{ __html: captchaSvg }}
-                                aria-label="Captcha image"
-                              />
-
-                              {/* Refresh button */}
-                              <button
-                                type="button"
-                                onClick={fetchCaptcha}
-                                disabled={captchaLoading}
-                                title="Refresh captcha"
-                                style={{
-                                  background: "none",
-                                  border: "1px solid #ccc",
+                                  padding: "8px 15px",
                                   borderRadius: "6px",
-                                  padding: "8px 10px",
-                                  cursor: captchaLoading
-                                    ? "not-allowed"
-                                    : "pointer",
-                                  color: "#555",
-                                  fontSize: "16px",
-                                  lineHeight: 1,
-                                  transition: "border-color 0.2s, color 0.2s",
-                                }}
-                                onMouseEnter={(e) => {
-                                  (
-                                    e.currentTarget as HTMLButtonElement
-                                  ).style.borderColor = "#002fb1";
-                                  (
-                                    e.currentTarget as HTMLButtonElement
-                                  ).style.color = "#002fb1";
-                                }}
-                                onMouseLeave={(e) => {
-                                  (
-                                    e.currentTarget as HTMLButtonElement
-                                  ).style.borderColor = "#ccc";
-                                  (
-                                    e.currentTarget as HTMLButtonElement
-                                  ).style.color = "#555";
+                                  border: "1px solid #ddd",
+                                  fontWeight: "bold",
+                                  letterSpacing: "4px",
+                                  fontSize: "18px",
+                                  userSelect: "none"
                                 }}
                               >
-                                ↺
-                              </button>
-
-                              {/* Captcha text input */}
+                                {generatedCode}
+                              </div>
                               <input
                                 className="form-control"
                                 type="text"
-                                placeholder="Enter captcha"
-                                value={captchaInput}
-                                onChange={(e) =>
-                                  setCaptchaInput(e.target.value)
-                                }
+                                placeholder="Enter code here"
+                                value={verificationCode}
+                                onChange={(e) => setVerificationCode(e.target.value)}
                                 required
-                                autoComplete="off"
+                                maxLength={3}
                                 style={{ flex: 1, minWidth: 120, margin: 0 }}
                               />
                             </div>
                             <small style={{ color: "#888", fontSize: "12px" }}>
-                              Type the characters shown in the image above
-                              (case-insensitive).
+                              Please enter the 3-digit verification code shown above.
                             </small>
                           </div>
-                          {/* ── /Captcha ─────────────────────────────────────── */}
+                          {/* ── /Verification ─────────────────────────────────────── */}
 
                           {/* Submit */}
                           <div className="col-sm-12">
                             <button
                               type="submit"
                               className="btn3 mt-15"
-                              disabled={loading || captchaLoading}
+                              disabled={loading}
                               style={{
                                 border: "none",
-                                cursor:
-                                  loading || captchaLoading
-                                    ? "not-allowed"
-                                    : "pointer",
+                                cursor: loading ? "not-allowed" : "pointer",
                               }}
                             >
                               {loading ? "Sending..." : "Send Message"}{" "}
